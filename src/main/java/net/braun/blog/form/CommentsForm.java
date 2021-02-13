@@ -1,4 +1,4 @@
-package net.braun.form;
+package net.braun.blog.form;
 
 public class CommentsForm {
 }

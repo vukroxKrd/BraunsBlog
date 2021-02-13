@@ -9,21 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="07.02.2021 - DB dump for the blog">
-      <change afterPath="$PROJECT_DIR$/external/TestDBDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/controller/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/controller/page/NewsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/foundation.css" afterDir="false" />
+    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/AboutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/listener/ApplicationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/about.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/article.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/contact.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/search.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/controller/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/controller/Controllers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/controller/page/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/dao/JdbcDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/JdbcDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/entity/Entities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Entities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/exception/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/exception/Exceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/filter/Filters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/filter/Filters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/form/CommentsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/form/CommentsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +76,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="project.structure.side.proportion" value="0.3141487" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -83,17 +92,6 @@
     <configuration name="TestDBDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestDBDataGenerator" />
       <module name="BraunsBlog" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,7 +177,6 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="BraunsBlog:war exploded" />
         </option>
@@ -210,7 +207,9 @@
       <workItem from="1612872745126" duration="2220000" />
       <workItem from="1612894741128" duration="3509000" />
       <workItem from="1613072906198" duration="1340000" />
-      <workItem from="1613162178725" duration="9443000" />
+      <workItem from="1613162178725" duration="13988000" />
+      <workItem from="1613210170942" duration="3114000" />
+      <workItem from="1613223822394" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore">
       <created>1612630221844</created>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612724531181</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat">
+      <created>1613205078661</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613205078661</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <MESSAGE value="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore" />
     <MESSAGE value="some minor changes to pom.xml" />
     <MESSAGE value="07.02.2021 - DB dump for the blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="07.02.2021 - DB dump for the blog" />
+    <MESSAGE value="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

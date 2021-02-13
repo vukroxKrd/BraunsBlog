@@ -1,6 +1,6 @@
-package net.braun.controller.page;
+package net.braun.blog.controller.page;
 
-import net.braun.controller.AbstractController;
+import net.braun.blog.controller.AbstractController;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,11 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet({"/news", "/news/*"})
-public class NewsController extends AbstractController {
+@WebServlet("/article")
+public class ArticleController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        forwardToPage("news.jsp",req, resp);
+        forwardToPage("article.jsp", req, resp);
     }
-
 }

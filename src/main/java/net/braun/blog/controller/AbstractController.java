@@ -1,4 +1,4 @@
-package net.braun.controller;
+package net.braun.blog.controller;
 
 
 import org.slf4j.Logger;
