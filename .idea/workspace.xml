@@ -9,30 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/AboutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/ContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/listener/ApplicationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/article.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="Added all other controllers.&#10;Deployed on tomcat v9.">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/breadcrumbs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-dropdown.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-table.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/comments.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/new-comment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/foundation-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/controller/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/controller/Controllers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/controller/page/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/dao/JdbcDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/JdbcDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/entity/Entities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Entities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/exception/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/exception/Exceptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/filter/Filters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/filter/Filters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/form/CommentsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/form/CommentsForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page-template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/article.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +59,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -92,6 +82,17 @@
     <configuration name="TestDBDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestDBDataGenerator" />
       <module name="BraunsBlog" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,7 +210,7 @@
       <workItem from="1613072906198" duration="1340000" />
       <workItem from="1613162178725" duration="13988000" />
       <workItem from="1613210170942" duration="3114000" />
-      <workItem from="1613223822394" duration="468000" />
+      <workItem from="1613223822394" duration="5363000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore">
       <created>1612630221844</created>
@@ -246,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613205078661</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added all other controllers.&#10;Deployed on tomcat v9.">
+      <created>1613224573900</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613224573900</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +277,8 @@
     <MESSAGE value="some minor changes to pom.xml" />
     <MESSAGE value="07.02.2021 - DB dump for the blog" />
     <MESSAGE value="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: &#10;jsps&#10;1. template&#10;2. news&#10;controllers&#10;1. AbstractController&#10;2. NewsController&#10;&#10;Set up maven and tomcat" />
+    <MESSAGE value="Added all other controllers.&#10;Deployed on tomcat v9." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all other controllers.&#10;Deployed on tomcat v9." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
