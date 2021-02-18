@@ -1,5 +1,6 @@
 package net.braun.blog.listener;
 
+import net.braun.blog.service.impl.ServiceManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,12 +14,14 @@ public class ApplicationListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
+        ServiceManager.getInstance(sce.getServletContext());
         LOGGER.info("Application started");
 
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
+        ServiceManager.getInstance(sce.getServletContext()).destroy();
         LOGGER.info("Application destroyed");
     }
 }
