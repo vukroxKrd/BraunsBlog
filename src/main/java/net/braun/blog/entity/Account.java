@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 
 public class Account extends AbstractEntity<Long> {
 
+    private static final long serialVersionUID = 166621684951443487L;
     private String email;
     private String name;
     private String avatar;

@@ -3,6 +3,7 @@ package net.braun.blog.entity;
 import java.sql.Timestamp;
 
 public class Comment extends AbstractEntity<Long> {
+    private static final long serialVersionUID = -6196376390799659026L;
     private Long idArticle;
     private Account account;
     private String content;

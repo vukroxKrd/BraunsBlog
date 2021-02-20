@@ -5,6 +5,7 @@ import org.apache.commons.lang.StringUtils;
 import java.sql.Timestamp;
 
 public class Article extends AbstractEntity<Long> {
+    private static final long serialVersionUID = 6188512176189209214L;
     private String title;
     private String url;
     private String logo;

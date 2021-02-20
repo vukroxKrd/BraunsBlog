@@ -1,6 +1,7 @@
 package net.braun.blog.entity;
 
 public class Category extends AbstractEntity<Integer> {
+    private static final long serialVersionUID = 8989393112680237388L;
     private String name;
     private String url;
     private int articles;

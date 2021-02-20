@@ -6,6 +6,8 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class AbstractEntity<PK> extends AbstractModel implements Serializable {
+
+    private static final long serialVersionUID = 7561734740783784963L;
     private PK id;
 
     public PK getId() {
