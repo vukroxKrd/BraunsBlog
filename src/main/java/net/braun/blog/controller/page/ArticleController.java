@@ -10,6 +10,8 @@ import java.io.IOException;
 
 @WebServlet("/article")
 public class ArticleController extends AbstractController {
+    private static final long serialVersionUID = 4203908778119760106L;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         forwardToPage("article.jsp", req, resp);

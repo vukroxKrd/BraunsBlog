@@ -1,5 +1,7 @@
 package net.braun.blog.listener;
 
+import net.braun.blog.Constants;
+import net.braun.blog.entity.Category;
 import net.braun.blog.service.impl.ServiceManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
+import java.util.Map;
 
 @WebListener
 public class ApplicationListener implements ServletContextListener {
@@ -14,7 +17,9 @@ public class ApplicationListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        ServiceManager.getInstance(sce.getServletContext());
+        ServiceManager serviceManager = ServiceManager.getInstance(sce.getServletContext());
+        Map<Integer, Category> map = serviceManager.getBusinessService().mapCategories();
+        sce.getServletContext().setAttribute(Constants.CATEGORY_MAP,map);
         LOGGER.info("Application started");
 
     }

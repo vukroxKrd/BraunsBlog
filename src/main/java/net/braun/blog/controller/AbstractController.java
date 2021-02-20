@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AbstractController extends HttpServlet {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 7170953770711590850L;
     protected final Logger LOGGER = LoggerFactory.getLogger(getClass());
     private BusinessService businessService;
 
