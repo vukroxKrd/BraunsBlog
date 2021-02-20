@@ -21,7 +21,6 @@ public class ApplicationListener implements ServletContextListener {
         Map<Integer, Category> map = serviceManager.getBusinessService().mapCategories();
         sce.getServletContext().setAttribute(Constants.CATEGORY_MAP,map);
         LOGGER.info("Application started");
-
     }
 
     @Override

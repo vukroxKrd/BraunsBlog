@@ -17,5 +17,4 @@ public class NewsController extends AbstractController {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         forwardToPage("news.jsp",req, resp);
     }
-
 }

@@ -14,6 +14,7 @@ public class ServiceManager {
 
     private static final String SERVICE_MANAGER = "SERVICE_MANAGER";
     private static final Logger LOGGER = LoggerFactory.getLogger(ServiceManager.class);
+
     final BusinessService businessService;
     final BasicDataSource dataSource;
     final Properties applicationProperties = new Properties();
@@ -24,10 +25,22 @@ public class ServiceManager {
         businessService = new BusinessServiceImpl(this);
         LOGGER.info("ServiceManager instance is created");
     }
-
+    //Singleton
+    public static ServiceManager getInstance(ServletContext context) {
+        ServiceManager instance = (ServiceManager) context.getAttribute(SERVICE_MANAGER);
+        if (instance == null) {
+            instance = new ServiceManager(context);
+            context.setAttribute(SERVICE_MANAGER, instance);
+        }
+        return instance;
+    }
 
     public String getApplicationProperty(String property) {
         return applicationProperties.getProperty(property);
+    }
+
+    public BusinessService getBusinessService() {
+        return businessService;
     }
 
     private BasicDataSource createBasicDataSource() {
@@ -43,24 +56,11 @@ public class ServiceManager {
         return ds;
     }
 
-    public static ServiceManager getInstance(ServletContext context) {
-        ServiceManager instance = (ServiceManager) context.getAttribute(SERVICE_MANAGER);
-        if (instance == null) {
-            instance = new ServiceManager(context);
-            context.setAttribute(SERVICE_MANAGER, instance);
-        }
-        return instance;
-    }
-
-    public BusinessService getBusinessService() {
-        return businessService;
-    }
-
     public void destroy() {
         try {
             dataSource.close();
         } catch (SQLException throwables) {
-            LOGGER.error("Close dataSource in ServiceManager failed: "+throwables.getMessage());
+            LOGGER.error("Close dataSource in ServiceManager failed: " + throwables.getMessage());
         }
         LOGGER.info("ServiceManager instance is destroyed");
     }
