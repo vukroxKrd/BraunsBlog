@@ -2,25 +2,34 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="BraunsBlog:war exploded" />
+      <artifact name="BraunBlog:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="1. ErrorHandlerFilter and Exceptions added">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/model/AbstractModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/model/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/img/no_avatar.png" afterDir="false" />
+    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/AbstractMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/ArticleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/ListMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BraunsBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BraunBlog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Entities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/foundation-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/foundation-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,17 +87,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3141487" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slava\Documents\Java\Projects\BraunBlog\src\main\webapp\static\font" />
+      <recent name="C:\Users\slava\Documents\Java\Projects\BraunBlog\src\main\webapp\static\css" />
       <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\src\main\webapp\static\img" />
       <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\src\main\webapp\static\css" />
       <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\external" />
-      <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\src\main\java\net\braun\util" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat9">
@@ -99,21 +109,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="BraunsBlog:war exploded">
+        <artifact name="BraunBlog:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -189,10 +188,16 @@
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
+        <EnvironmentVariables>
+          <option name="NAME" value="CATALINA_HOME" />
+          <option name="VALUE" value="C:\Tools\tomcat9" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
       </ConfigurationWrapper>
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
           <artifact name="BraunsBlog:war exploded" />
+          <artifact name="BraunBlog:war" />
         </option>
       </method>
     </configuration>
@@ -235,7 +240,10 @@
       <workItem from="1613636602207" duration="251000" />
       <workItem from="1613669470590" duration="3786000" />
       <workItem from="1613748906714" duration="1256000" />
-      <workItem from="1613754930457" duration="5162000" />
+      <workItem from="1613754930457" duration="27909000" />
+      <workItem from="1613900734784" duration="834000" />
+      <workItem from="1613904490924" duration="5058000" />
+      <workItem from="1613933271346" duration="3124000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore">
       <created>1612630221844</created>
@@ -300,7 +308,35 @@
       <option name="project" value="LOCAL" />
       <updated>1613750030184</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Entities and Models&#10;All major Entites parametrized created for the future work with DB:&#10;-Article&#10;-Account&#10;-Category&#10;-Comment&#10;Two Modes created:&#10;-AbstractModel&#10;-Items&#10;&#10;Also:&#10;-avatar added&#10;-dependency added for toString method common-lang">
+      <created>1613804144771</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613804144771</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added servialVersionUID for all major entities.">
+      <created>1613804302088</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1613804302088</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added serializableUID to all controllers.">
+      <created>1613838743087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613838743087</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons">
+      <created>1613848956902</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613848956902</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +363,11 @@
     <MESSAGE value="Decomposed:&#10;1. page-template.jsp&#10;2. article.jsp&#10;By means of &quot;jsp include&quot; connected blocks between themselves.&#10;Downloaded fonts into /static" />
     <MESSAGE value="1.resolved the issue with dbcp/maven download (added dependency manually).&#10;2. Created ServiceManager.java which will use BusinessService methods provided by the interface BusinessService.&#10;3. SetUp connection pool inside ServiceManager; also setup init and destroy of the connection pool." />
     <MESSAGE value="1. ErrorHandlerFilter and Exceptions added" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. ErrorHandlerFilter and Exceptions added" />
+    <MESSAGE value="Entities and Models&#10;All major Entites parametrized created for the future work with DB:&#10;-Article&#10;-Account&#10;-Category&#10;-Comment&#10;Two Modes created:&#10;-AbstractModel&#10;-Items&#10;&#10;Also:&#10;-avatar added&#10;-dependency added for toString method common-lang" />
+    <MESSAGE value="added servialVersionUID for all major entities." />
+    <MESSAGE value="Added serializableUID to all controllers." />
+    <MESSAGE value="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -341,6 +381,21 @@
           <url>file://$PROJECT_DIR$/external/TestDBDataGenerator.java</url>
           <line>145</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/commons-dbcp2-2.8.0.jar!/org/apache/commons/dbcp2/DriverFactory.class</url>
+          <line>16</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/filter/ErrorHandlerFilter.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/external/TestDBDataGenerator.java</url>
@@ -368,5 +423,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="this.classCache" custom="javax.servlet.ServletContext" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
