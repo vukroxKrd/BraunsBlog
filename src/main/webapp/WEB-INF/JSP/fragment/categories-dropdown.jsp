@@ -11,27 +11,12 @@
     <li>
         <a href="javascript:void(0);">Categories</a>
         <ul class="menu" style="display:none;">
-            <li>
-                <a href="/news">Elementum<span>(1)</span></a>
-            </li>
-            <li>
-                <a href="/news">Proin<span>(2)</span></a>
-            </li>
-            <li>
-                <a href="/news">Eleifend<span>(18)</span></a>
-            </li>
-            <li>
-                <a href="/news">Phasellus<span>(24)</span></a>
-            </li>
-            <li>
-                <a href="/news">Consectetuer<span>(33)</span></a>
-            </li>
-            <li>
-                <a href="/news">Ultricies<span>(2)</span></a>
-            </li>
-            <li>
-                <a href="/news">Mollis<span>(1)</span></a>
-            </li>
+            <c:forEach var="categoryEntry" items="${CATEGORY_MAP }">
+                <c:set var="cat" value="${categoryEntry.value}" />
+                <li class="${selectedCategory.id == categoryEntry.key ? 'selected ' : '' }sitem">
+                    <a href="/news/${cat.url.toLowerCase() }">${cat.name} <span>(${cat.articles })</span></a>
+                </li>
+            </c:forEach>
         </ul>
     </li>
 </ul>

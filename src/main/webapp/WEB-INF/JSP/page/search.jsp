@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
+<div class="callout">
+    <h5>Found<strong>${count}</strong>article(s)</h5>
+</div>
 <jsp:include page="news.jsp"/>
 </body>
 </html>

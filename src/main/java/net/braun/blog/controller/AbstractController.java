@@ -27,12 +27,12 @@ public class AbstractController extends HttpServlet {
     }
 
     public final void forwardToPage(String jspPage, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("currentPage", "page/"+ jspPage);
+        request.setAttribute("currentPage", "page/" + jspPage);
         request.getRequestDispatcher("/WEB-INF/JSP/page-template.jsp").forward(request, response);
     }
 
     public final void forwardToFragment(String jspPage, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("currentPage", jspPage);
-        request.getRequestDispatcher("/WEB-INF/JSP/fragment/"+jspPage).forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/JSP/fragment/" + jspPage).forward(request, response);
     }
 }

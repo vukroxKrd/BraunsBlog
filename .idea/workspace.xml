@@ -9,27 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/AbstractMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/ListMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="List of articles from DB and model for /news - ready.&#10;minor debugging.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BraunsBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BraunBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/SearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/foundation-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/foundation-icons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/font/foundation-icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-dropdown.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-dropdown.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-table.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,18 +79,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SellerLabs Repos/sellerlabs-java" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3141487" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slava\Documents\Java\Projects\BraunBlog\src\main\webapp" />
       <recent name="C:\Users\slava\Documents\Java\Projects\BraunBlog\src\main\webapp\static\font" />
       <recent name="C:\Users\slava\Documents\Java\Projects\BraunBlog\src\main\webapp\static\css" />
       <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\src\main\webapp\static\img" />
       <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\src\main\webapp\static\css" />
-      <recent name="C:\Users\slava\Documents\Java\Projects\Blogs\external" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat9">
@@ -127,7 +120,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63418" />
+        <option name="DEBUG_PORT" value="54575" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -243,7 +236,11 @@
       <workItem from="1613754930457" duration="27909000" />
       <workItem from="1613900734784" duration="834000" />
       <workItem from="1613904490924" duration="5058000" />
-      <workItem from="1613933271346" duration="3124000" />
+      <workItem from="1613933271346" duration="3470000" />
+      <workItem from="1614020365332" duration="1496000" />
+      <workItem from="1614066943532" duration="7351000" />
+      <workItem from="1614097999128" duration="342000" />
+      <workItem from="1614098417529" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore">
       <created>1612630221844</created>
@@ -336,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613848956902</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="List of articles from DB and model for /news - ready.&#10;minor debugging.">
+      <created>1613938090860</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1613938090863</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +371,8 @@
     <MESSAGE value="added servialVersionUID for all major entities." />
     <MESSAGE value="Added serializableUID to all controllers." />
     <MESSAGE value="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons" />
+    <MESSAGE value="List of articles from DB and model for /news - ready.&#10;minor debugging." />
+    <option name="LAST_COMMIT_MESSAGE" value="List of articles from DB and model for /news - ready.&#10;minor debugging." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -394,8 +399,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="33" />
+          <line>26</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/external/TestDBDataGenerator.java</url>

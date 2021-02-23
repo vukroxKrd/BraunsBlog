@@ -26,7 +26,8 @@ class BusinessServiceImpl implements BusinessService {
     @Override
     public Map<Integer, Category> mapCategories() {
         try (Connection c = dataSource.getConnection()) {
-            return sql.mapCategories(c);
+            Map<Integer, Category> categoryMap = sql.mapCategories(c);
+            return categoryMap;
         } catch (SQLException throwables) {
             throw new ApplicationException("Can't execute db (Mapping Categories) command: " + throwables.getMessage());
         }
@@ -36,11 +37,45 @@ class BusinessServiceImpl implements BusinessService {
     public Items<Article> listArticles(int offset, int limit) {
         try (Connection c = dataSource.getConnection()) {
             Items<Article> items = new Items<>();
-            items.setItems(sql.listArticles(c,offset,limit));
+            items.setItems(sql.listArticles(c, offset, limit));
             items.setCount(sql.countArticles(c));
             return items;
         } catch (SQLException e) {
-            throw new ApplicationException("Can not get Articles from a data base: "+ e.getMessage(),e);
+            throw new ApplicationException("Can not get Articles from a data base: " + e.getMessage(), e);
+        }
+    }
+
+    @Override
+    public Items<Article> listArticlesByCategory(String categoryUrl, int offset, int limit) {
+        try (Connection c = dataSource.getConnection()) {
+            Items<Article> items = new Items<>();
+            items.setItems(sql.listArticlesByCategory(c, categoryUrl, offset, limit));
+            items.setCount(sql.countArticlesByCategory(c, categoryUrl));
+            return items;
+        } catch (SQLException e) {
+            throw new ApplicationException("Can not get Articles by Categories from a data base: " + e.getMessage(), e);
+        }
+    }
+
+    @Override
+    public Category findCategoryByUrl(String categoryUrl) {
+        try (Connection c = dataSource.getConnection()) {
+            return sql.findCategoryByUrl(c, categoryUrl);
+        } catch (SQLException throwables) {
+            throw new ApplicationException("Can't execute db (findCategoryByUrl) command: " + throwables.getMessage());
+        }
+    }
+
+    @Override
+    public Items<Article> listArticlesBySearchQuery(String searchQuery, int offset, int limit) {
+        try (Connection c = dataSource.getConnection()) {
+            Items<Article> items = new Items<>();
+            items.setItems(sql.listArticlesBySearchQuery(c, searchQuery, offset, limit));
+            items.setCount(sql.countArticlesBySearchQuery(c, searchQuery));
+            return items;
+        } catch (SQLException e) {
+            throw new ApplicationException("Can not get Articles by Search from a data base: " + e.getMessage(), e);
         }
     }
 }
+

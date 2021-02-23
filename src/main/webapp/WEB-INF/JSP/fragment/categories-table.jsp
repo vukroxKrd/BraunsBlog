@@ -17,8 +17,8 @@
     <c:forEach var="categoryEntry" items="${CATEGORY_MAP}">
         <c:set var="cat" value="${categoryEntry.value}"/>
     <tr>
-        <td class="item">
-            <a href="/news${cat.name}">${cat.name}<span>(${cat.articles})</span></a>
+        <td class="${selectedCategory.id == categoryEntry.key ? 'selected ' : '' }item">
+            <a href="/news/${cat.name.toLowerCase()}">${cat.name}<span>(${cat.articles})</span></a>
         </td>
     </tr>
     </c:forEach>
