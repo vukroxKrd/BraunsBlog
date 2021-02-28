@@ -9,19 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="List of articles from DB and model for /news - ready.&#10;minor debugging.">
+    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="Implemented search.&#10;changed header.&#10;Added search methods to BusinessService and SqlDAO.">
+      <change afterPath="$PROJECT_DIR$/.idea/BraunBlog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagination.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-dropdown.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-dropdown.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/categories-table.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -80,7 +79,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SellerLabs Repos/sellerlabs-java" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3141487" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
@@ -120,7 +119,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54575" />
+        <option name="DEBUG_PORT" value="8085" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -240,7 +239,16 @@
       <workItem from="1614020365332" duration="1496000" />
       <workItem from="1614066943532" duration="7351000" />
       <workItem from="1614097999128" duration="342000" />
-      <workItem from="1614098417529" duration="4256000" />
+      <workItem from="1614098417529" duration="4963000" />
+      <workItem from="1614153021766" duration="23000" />
+      <workItem from="1614183818050" duration="595000" />
+      <workItem from="1614241064997" duration="728000" />
+      <workItem from="1614281880322" duration="1612000" />
+      <workItem from="1614315752310" duration="44000" />
+      <workItem from="1614327892492" duration="73000" />
+      <workItem from="1614350028770" duration="3855000" />
+      <workItem from="1614405514560" duration="1556000" />
+      <workItem from="1614418098944" duration="10969000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore">
       <created>1612630221844</created>
@@ -340,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613938090863</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implemented search.&#10;changed header.&#10;Added search methods to BusinessService and SqlDAO.">
+      <created>1614103779918</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614103779920</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +387,8 @@
     <MESSAGE value="Added serializableUID to all controllers." />
     <MESSAGE value="fixed the issue with properties file.&#10;tomcat loading now.&#10;colons" />
     <MESSAGE value="List of articles from DB and model for /news - ready.&#10;minor debugging." />
-    <option name="LAST_COMMIT_MESSAGE" value="List of articles from DB and model for /news - ready.&#10;minor debugging." />
+    <MESSAGE value="Implemented search.&#10;changed header.&#10;Added search methods to BusinessService and SqlDAO." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented search.&#10;changed header.&#10;Added search methods to BusinessService and SqlDAO." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -388,19 +404,94 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/lib/commons-dbcp2-2.8.0.jar!/org/apache/commons/dbcp2/DriverFactory.class</url>
-          <line>16</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/filter/ErrorHandlerFilter.java</url>
           <line>14</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/AbstractController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagination.tag</url>
+          <line>12</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagination.tag</url>
+          <line>13</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/external/TestDBDataGenerator.java</url>
@@ -425,6 +516,14 @@
           <line>47</line>
           <properties field="DEST_MEDIA" class="TestDBDataGenerator" />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java</url>
+          <line>32</line>
+          <properties class="net.braun.blog.model.Pagination" method="getNextUrl">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
