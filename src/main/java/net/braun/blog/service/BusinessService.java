@@ -2,6 +2,7 @@ package net.braun.blog.service;
 
 import net.braun.blog.entity.Article;
 import net.braun.blog.entity.Category;
+import net.braun.blog.exception.RedirectToValidUrlException;
 import net.braun.blog.model.Items;
 
 import java.util.Map;
@@ -17,4 +18,6 @@ public interface BusinessService {
     Category findCategoryByUrl(String categoryUrl);
 
     Items<Article> listArticlesBySearchQuery(String searchQuery, int offset, int limit);
+
+    Article viewArticle (Long idArticle, String requestUrl) throws RedirectToValidUrlException;
 }

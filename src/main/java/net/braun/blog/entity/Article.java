@@ -89,7 +89,7 @@ public class Article extends AbstractEntity<Long> {
     }
 
     public String getArticleLink() {
-        return "/article" + getId() + url;
+        return "/article/" + getId() + url;
     }
 
     public String getShortTitle() {

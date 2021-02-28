@@ -4,6 +4,7 @@ import net.braun.blog.dao.SqlDAO;
 import net.braun.blog.entity.Article;
 import net.braun.blog.entity.Category;
 import net.braun.blog.exception.ApplicationException;
+import net.braun.blog.exception.RedirectToValidUrlException;
 import net.braun.blog.model.Items;
 import net.braun.blog.service.BusinessService;
 
@@ -76,6 +77,27 @@ class BusinessServiceImpl implements BusinessService {
         } catch (SQLException e) {
             throw new ApplicationException("Can not get Articles by Search from a data base: " + e.getMessage(), e);
         }
+    }
+
+    @Override
+    public Article viewArticle(Long idArticle, String requestUrl) throws RedirectToValidUrlException {
+        try(Connection c = dataSource.getConnection()) {
+            Article article = sql.findArticleById(c,idArticle);
+            if (article == null) {
+                return null;
+            }
+            if (!article.getArticleLink().equals(requestUrl)){
+                throw new RedirectToValidUrlException(article.getArticleLink());
+            } else {
+                article.setViews(article.getViews()+1);
+                sql.updateArticleViews(c,article);
+                c.commit();
+                return article;
+            }
+        } catch (SQLException sqlException) {
+
+        }
+        return null;
     }
 }
 
