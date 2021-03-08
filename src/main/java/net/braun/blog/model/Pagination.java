@@ -1,5 +1,7 @@
 package net.braun.blog.model;
 
+import net.braun.blog.entity.Article;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +9,7 @@ public final class Pagination extends AbstractModel {
     private final String previousUrl;
     private final String nextUrl;
     public final List<PageItem> pages;
+
 
     public Pagination(String previousUrl, String nextUrl, List<PageItem> pages) {
         this.previousUrl = previousUrl;
@@ -84,6 +87,7 @@ public final class Pagination extends AbstractModel {
         }
 
     }
+
     //inner class which helps building Pagination
     public static class Builder extends AbstractModel {
         private static final int DEFAULT_MAX_PAGINATION_BUTTONS_PER_PAGE = 9;
