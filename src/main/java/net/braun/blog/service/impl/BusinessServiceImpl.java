@@ -3,6 +3,7 @@ package net.braun.blog.service.impl;
 import net.braun.blog.dao.SqlDAO;
 import net.braun.blog.entity.Article;
 import net.braun.blog.entity.Category;
+import net.braun.blog.entity.Comment;
 import net.braun.blog.exception.ApplicationException;
 import net.braun.blog.exception.RedirectToValidUrlException;
 import net.braun.blog.model.Items;
@@ -11,6 +12,7 @@ import net.braun.blog.service.BusinessService;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Map;
 
 class BusinessServiceImpl implements BusinessService {
@@ -81,16 +83,16 @@ class BusinessServiceImpl implements BusinessService {
 
     @Override
     public Article viewArticle(Long idArticle, String requestUrl) throws RedirectToValidUrlException {
-        try(Connection c = dataSource.getConnection()) {
-            Article article = sql.findArticleById(c,idArticle);
+        try (Connection c = dataSource.getConnection()) {
+            Article article = sql.findArticleById(c, idArticle);
             if (article == null) {
                 return null;
             }
-            if (!article.getArticleLink().equals(requestUrl)){
+            if (!article.getArticleLink().equals(requestUrl)) {
                 throw new RedirectToValidUrlException(article.getArticleLink());
             } else {
-                article.setViews(article.getViews()+1);
-                sql.updateArticleViews(c,article);
+                article.setViews(article.getViews() + 1);
+                sql.updateArticleViews(c, article);
                 c.commit();
                 return article;
             }
@@ -98,6 +100,15 @@ class BusinessServiceImpl implements BusinessService {
 
         }
         return null;
+    }
+
+    @Override
+    public List<Comment> listComments(long idArticle, int offset, int limit) {
+        try (Connection c = dataSource.getConnection()) {
+            return sql.listComments(c, idArticle, offset, limit);
+        } catch (SQLException e) {
+            throw new ApplicationException("Can't execute db command tp extract comments: " + e.getMessage(), e);
+        }
     }
 }
 

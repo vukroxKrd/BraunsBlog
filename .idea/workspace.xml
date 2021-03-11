@@ -9,14 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="Incrementing pageviews added.&#10;Error handling added.&#10;JSP for articles added.&#10;Links for articles created.">
+    <list default="true" id="0e9036f0-2546-4b94-b4dc-f2676fe99e0f" name="Default Changelist" comment="Resource not found fixes.&#10;breadcrumbs.jsp implementation.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/mapper/CommentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/controller/page/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/model/Pagination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/dao/SqlDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/entity/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/BusinessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/breadcrumbs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/breadcrumbs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/braun/blog/service/impl/BusinessServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/comments.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/fragment/comments.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/page/article.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/img/no_avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/img/noAvatar.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +260,10 @@
       <workItem from="1614611596850" duration="4136000" />
       <workItem from="1614686927665" duration="17000" />
       <workItem from="1615221902725" duration="2667000" />
-      <workItem from="1615226013524" duration="1601000" />
+      <workItem from="1615226013524" duration="2155000" />
+      <workItem from="1615277468218" duration="359000" />
+      <workItem from="1615440985638" duration="2204000" />
+      <workItem from="1615484743270" duration="2805000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;1. Created folders structure&#10;2. added pom.xml, gitignore">
       <created>1612630221844</created>
@@ -376,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614508563391</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Resource not found fixes.&#10;breadcrumbs.jsp implementation.">
+      <created>1615227895893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615227895893</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +426,8 @@
     <MESSAGE value="Implemented search.&#10;changed header.&#10;Added search methods to BusinessService and SqlDAO." />
     <MESSAGE value="Added pagination but struggling with separate pages links. &#10;Cannot understand why root url doesn't show up." />
     <MESSAGE value="Incrementing pageviews added.&#10;Error handling added.&#10;JSP for articles added.&#10;Links for articles created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Incrementing pageviews added.&#10;Error handling added.&#10;JSP for articles added.&#10;Links for articles created." />
+    <MESSAGE value="Resource not found fixes.&#10;breadcrumbs.jsp implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Resource not found fixes.&#10;breadcrumbs.jsp implementation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

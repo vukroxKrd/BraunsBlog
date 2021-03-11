@@ -45,8 +45,9 @@ public class Account extends AbstractEntity<Long> {
     public boolean isAvatarExist() {
         return avatar != null;
     }
-    public String getNoAvatar(){
-        return "/static/img/no avatar.png";
+
+    public String getNoAvatar() {
+        return "/static/img/noAvatar.png";
     }
 
 }
